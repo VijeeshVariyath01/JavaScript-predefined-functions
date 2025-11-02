@@ -1,0 +1,59 @@
+
+<html>
+<head>
+    <title>Predefined functions</title>
+</head>
+<body bgcolor="">
+    <center><h1>Javascript Pre-defined functions String and Math</h1></center>
+    <h4><u><b>String = abcdefg</b></u></h4>
+
+
+    <h3 style="color: red;">String Methods</h3>
+    <hr>
+   <p>Length :<b id="len"></b></p> 
+   <p>uppercase :<b id="uppercase"></b></p> 
+   <p>substring(2-5) :<b id="substring"></b></p> 
+   <p>replace abc-xyz :<b id="replace"></b></p> 
+   <p>starts with (abc ) :<b id="startswith"></b></p> 
+   <p>concatination (abc) :<b id="con"></b></p> 
+
+
+   <h3 style="color: red;">Math Methods</h3>
+   <hr>
+
+   <h4><u><b>Number = -2.5</b></u></h4>
+  <p>abs :<b id="abs"></b></p> 
+  <p>pow :<b id="pow"></b></p> 
+  <p>max(2,4,16) :<b id="max"></b></p> 
+  <p>round :<b id="round"></b></p> 
+  <p>random generation :<b id="random"></b></p> 
+  <p>squareroot  :<b id="sqrt"></b></p> 
+
+
+
+    <script>
+
+        const string="abcdefg"
+        const string1="abc"
+        document.getElementById("len").innerHTML=string.length;
+        document.getElementById("uppercase").innerHTML=string.toUpperCase();
+        document.getElementById("substring").innerHTML=string.substring(2,5);
+        document.getElementById("replace").innerHTML=string.replace('abc','xyz');
+        document.getElementById("startswith").innerHTML=string.startsWith('abc');
+        document.getElementById("con").innerHTML=string +string1;
+
+ 
+        const number= -2.5;
+        document.getElementById("abs").innerHTML=Math.abs(number);
+        document.getElementById("pow").innerHTML=Math.pow(2,4);
+        document.getElementById("max").innerHTML=Math.max(2,4,16);
+        document.getElementById("round").innerHTML=Math.round(number);
+        document.getElementById("random").innerHTML=Math.random();
+        document.getElementById("sqrt").innerHTML=Math.sqrt(225);
+   
+
+
+
+    </script>
+</body>
+</html>
